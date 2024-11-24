@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID & Password Copier</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 상단 제목 섹션 -->
+  <header class="header">
+<P></P><h1>Icograms ID&PW</h1>
+  </header>
+
+  <!-- 본문 컨테이너 -->
+  <div class="container">
+    <h2>아이디 & 비밀번호 복사</h2>
+    <div class="copy-container">
+      <label for="user-id">아이디:</label>
+      <input type="text" id="user-id" value="gusalswn123@naver.com" readonly>
+      <button onclick="copyToClipboard('user-id')">복사</button>
+    </div>
+    <div class="copy-container">
+      <label for="password">비밀번호:</label>
+      <input type="text" id="password" value="Jejuisland!25" readonly>
+      <button onclick="copyToClipboard('password')">복사</button>
+    </div>
+  </div>
+    <!-- 하단 푸터 -->
+    <footer class="footer">
+        <p>아이코그램 사이트를 이동하려면 <a href="https://icograms.com/" target="_blank">여기를 클릭하세요</a>.</p>
+      </footer>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
